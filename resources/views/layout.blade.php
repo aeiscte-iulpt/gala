@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <script data-queue-fair-client="gala" src="https://files.queue-fair.net/queue-fair-adapter.js"></script>
+    <script data-queue-fair-client="aeiscte" src="https://files.queue-fair.net/queue-fair-adapter.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,9 +32,10 @@ body {
 .nav-item {
     margin-right: 5rem;
 }
-.btn:hover{
-    background-color:rgba(203,174,115,0.8) !important;
-    color:rgb(15,23,72) !important;
+
+.btn:hover {
+    background-color: rgba(203, 174, 115, 0.8) !important;
+    color: rgb(15, 23, 72) !important;
 }
 </style>
 
