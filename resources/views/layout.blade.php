@@ -66,7 +66,7 @@ body {
                     </li>
 
                     <li class="nav-item">
-                        <button class="btn btn-sm nav-link nav-link-ltr" style="font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
+                        <button onclick="location.href='https://www.gala.aeiscte-iul.pt/inscrever'" class="btn btn-sm nav-link nav-link-ltr" style="font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
     border-color: var(--bs-btn-hover-border-color);">Inscrever</button>
 
                     </li>
