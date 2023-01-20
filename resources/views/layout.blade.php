@@ -5,9 +5,12 @@
     <script data-queue-fair-client="aeiscte" src="https://files.queue-fair.net/queue-fair-adapter.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta property="og:title" content="Gala Iscte 2023 | Diamonds are forever">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://gala.aiscte-iul.pt/img/homepc.jpeg">
+    <meta property="og:url" content="https://gala.aiscte-iul.pt/">
     <title>Gala Iscte</title>
-    <link rel="icon" href="{{ asset('img/dare-vertical-logo.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/Logo Dourado AE.png') }}" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
