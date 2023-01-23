@@ -12,70 +12,68 @@ class GalaController extends Controller
             'nome1'   =>  'required',
             'email1'   =>  'required',
             'phone1'   =>  'required',
-            'intolerante1'     =>  'required',
+            
             'is_vegan1'    =>  'required',
             'aluno1'        =>  'required',
            
             'nome2'   =>  'required',
             'email2'   =>  'required',
             'phone2'   =>  'required',
-            'intolerante2'     =>  'required',
+            
             'is_vegan2'    =>  'required',
             'aluno2'        =>  'required',
 
             'nome3'   =>  'required',
             'email3'   =>  'required',
             'phone3'   =>  'required',
-            'intolerante3'     =>  'required',
+           
             'is_vegan3'    =>  'required',
             'aluno3'        =>  'required',
 
             'nome4'   =>  'required',
             'email4'   =>  'required',
             'phone4'   =>  'required',
-            'intolerante4'     =>  'required',
+           
             'is_vegan4'    =>  'required',
             'aluno4'        =>  'required',
 
             'nome5'   =>  'required',
             'email5'   =>  'required',
             'phone5'   =>  'required',
-            'intolerante5'     =>  'required',
+         
             'is_vegan5'    =>  'required',
             'aluno5'        =>  'required',
 
             'nome6'   =>  'required',
             'email6'   =>  'required',
             'phone6'   =>  'required',
-            'intolerante6'     =>  'required',
+            
             'is_vegan6'    =>  'required',
             'aluno6'        =>  'required',
 
             'nome7'   =>  'required',
             'email7'   =>  'required',
             'phone7'   =>  'required',
-            'intolerante7'     =>  'required',
+ 
             'is_vegan7'    =>  'required',
             'aluno7'        =>  'required',
 
             'nome8'   =>  'required',
             'email8'   =>  'required',
             'phone8'   =>  'required',
-            'intolerante8'     =>  'required',
+        
             'is_vegan8'    =>  'required',
             'aluno8'        =>  'required',
 
             'nome9'   =>  'required',
             'email9'   =>  'required',
             'phone9'   =>  'required',
-            'intolerante9'     =>  'required',
             'is_vegan9'    =>  'required',
             'aluno9'        =>  'required',
 
             'nome10'   =>  'required',
             'email10'   =>  'required',
             'phone10'   =>  'required',
-            'intolerante10'     =>  'required',
             'is_vegan10'    =>  'required',
             'aluno10'        =>  'required',
 
