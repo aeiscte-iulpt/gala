@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::post('/inscricao', [App\Http\Controllers\GalaController::class, 'inscricao'])->name('inscricao');
 
 
 Route::get('/inscrever', function () {

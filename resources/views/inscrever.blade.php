@@ -97,7 +97,31 @@
                 <h4>Formulário de inscrição</h4>
             </div>
             <div class="card-body">
-                <form class="row g-3">
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <button type="button" class="close" data-dismiss="alert">+</button>
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+                @if (Session::get('erro'))
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert">+</button>
+                    <strong>{{Session::get('erro')}}</strong>
+                </div>
+                @endif
+                @if (Session::get('success'))
+                <div class="alert alert-success alert-block">
+                    <button type="button" class="close" data-dismiss="alert">+</button>
+                    <strong>{{Session::get('success')}}</strong>
+                </div>
+                @endif
+
+                <form class="row g-3" action="{{ url('/inscricao') }}" method="post">
+                    @csrf
                     <div class="col-md-3"></div>
 
                     <div class="col-md-6 text-center">
