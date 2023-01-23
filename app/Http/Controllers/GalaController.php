@@ -101,7 +101,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante1;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email1.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
         }
         if(!isset($inscrito2)){
             $users = new Inscritos;
@@ -113,7 +113,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante2;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email2.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
         }
         if(!isset($inscrito3)){
             $users = new Inscritos;
@@ -125,7 +125,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante3;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email3.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
         }
         if(!isset($inscrito4)){
             $users = new Inscritos;
@@ -137,7 +137,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante4;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email4.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
         }
         if(!isset($inscrito5)){
             $users = new Inscritos;
@@ -149,7 +149,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante5;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email5.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
         }
         if(!isset($inscrito6)){
             $users = new Inscritos;
@@ -161,7 +161,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante6;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email6.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
         }
         if(!isset($inscrito7)){
             $users = new Inscritos;
@@ -173,7 +173,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante7;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email7.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
         }
         if(!isset($inscrito8)){
             $users = new Inscritos;
@@ -185,7 +185,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante8;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email8.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
         }
         if(!isset($inscrito9)){
             $users = new Inscritos;
@@ -197,7 +197,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante9;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email9.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
         }
         if(!isset($inscrito10)){
             $users = new Inscritos;
@@ -209,7 +209,7 @@ class GalaController extends Controller
             $users->intolerante =$request->intolerante10;
             $users->save();
         }else{
-            return  back()->with('erro', 'OOOPPSS! Email: '.$email10.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
         }
 
         if ($count6 < 78) { /**Adicionar +10 */
