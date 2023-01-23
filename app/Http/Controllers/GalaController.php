@@ -79,7 +79,7 @@ class GalaController extends Controller
 
         ]);
 
-
+        $count6 = Inscritos::all()->count();
         $inscrito1 = Inscritos::where('email',$request->email1)->first();
         $inscrito2 = Inscritos::where('email',$request->email2)->first();
         $inscrito3 = Inscritos::where('email',$request->email3)->first();
