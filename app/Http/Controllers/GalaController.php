@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Inscritos;
-use App\Mail\SendEmail;
+use App\Mail\SendMail;
 use Illuminate\Support\Facades\Mail;
 
 class GalaController extends Controller
@@ -215,7 +215,7 @@ class GalaController extends Controller
         }
 
         if ($count6 < 78) { /**Adicionar +10 */
-            Mail::to($request->email1)->send(new SendEmail($request->nome1));
+            Mail::to($request->email1)->send(new SendMail($request->nome1));
             return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
         }else{
             return  back()->with('success', 'Obrigado! A tua inscrição foi registada, mas vais ter que ficar na lista de Espera!');
