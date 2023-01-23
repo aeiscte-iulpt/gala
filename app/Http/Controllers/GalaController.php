@@ -14,56 +14,48 @@ class GalaController extends Controller
             'nome1'   =>  'required',
             'email1'   =>  'required',
             'phone1'   =>  'required',
-            
             'is_vegan1'    =>  'required',
             'aluno1'        =>  'required',
            
-            'nome2'   =>  'required',
+           /* 'nome2'   =>  'required',
             'email2'   =>  'required',
             'phone2'   =>  'required',
-            
             'is_vegan2'    =>  'required',
             'aluno2'        =>  'required',
 
             'nome3'   =>  'required',
             'email3'   =>  'required',
             'phone3'   =>  'required',
-           
             'is_vegan3'    =>  'required',
             'aluno3'        =>  'required',
 
             'nome4'   =>  'required',
             'email4'   =>  'required',
             'phone4'   =>  'required',
-           
             'is_vegan4'    =>  'required',
             'aluno4'        =>  'required',
 
             'nome5'   =>  'required',
             'email5'   =>  'required',
             'phone5'   =>  'required',
-         
             'is_vegan5'    =>  'required',
             'aluno5'        =>  'required',
 
             'nome6'   =>  'required',
             'email6'   =>  'required',
             'phone6'   =>  'required',
-            
             'is_vegan6'    =>  'required',
             'aluno6'        =>  'required',
 
             'nome7'   =>  'required',
             'email7'   =>  'required',
             'phone7'   =>  'required',
- 
             'is_vegan7'    =>  'required',
             'aluno7'        =>  'required',
 
             'nome8'   =>  'required',
             'email8'   =>  'required',
             'phone8'   =>  'required',
-        
             'is_vegan8'    =>  'required',
             'aluno8'        =>  'required',
 
@@ -77,13 +69,13 @@ class GalaController extends Controller
             'email10'   =>  'required',
             'phone10'   =>  'required',
             'is_vegan10'    =>  'required',
-            'aluno10'        =>  'required',
+            'aluno10'        =>  'required',*/
 
         ]);
 
         $count6 = Inscritos::all()->count();
         $inscrito1 = Inscritos::where('email',$request->email1)->first();
-        $inscrito2 = Inscritos::where('email',$request->email2)->first();
+    /*    $inscrito2 = Inscritos::where('email',$request->email2)->first();
         $inscrito3 = Inscritos::where('email',$request->email3)->first();
         $inscrito4 = Inscritos::where('email',$request->email4)->first();
         $inscrito5 = Inscritos::where('email',$request->email5)->first();
@@ -91,7 +83,7 @@ class GalaController extends Controller
         $inscrito7 = Inscritos::where('email',$request->email7)->first();
         $inscrito8 = Inscritos::where('email',$request->email8)->first();
         $inscrito9 = Inscritos::where('email',$request->email9)->first();
-        $inscrito10 = Inscritos::where('email',$request->email10)->first();
+        $inscrito10 = Inscritos::where('email',$request->email10)->first();*/
 
         if(!isset($inscrito1)){
             $users = new Inscritos;
@@ -105,7 +97,7 @@ class GalaController extends Controller
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
         }
-        if(!isset($inscrito2)){
+       /* if(!isset($inscrito2)){
             $users = new Inscritos;
             $users->nome   = $request->nome2;
             $users->email  = $request->email2;
@@ -212,7 +204,7 @@ class GalaController extends Controller
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
-        }
+        }*/
 
         if ($count6 < 78) { /**Adicionar +10 */
             Mail::to($request->email1)->send(new SendMail($request->nome1));
