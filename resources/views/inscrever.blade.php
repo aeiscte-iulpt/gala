@@ -165,7 +165,7 @@
 
                     <!------------------------------------------------------------------->
 
-                    <!-- <h5 class="card-title text-center">Membro 2</h5>
+                    <h5 class="card-title text-center">Membro 2</h5>
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
@@ -197,10 +197,8 @@
                     </div>
                     <hr>
 
--->
                     <!------------------------------------------------------------------->
 
-<!---
                     <h5 class="card-title text-center">Membro 3</h5>
 
                     <div class="col-md-6">
@@ -231,11 +229,11 @@
                         <label for="inputZip" class="form-label">Nº Aluno</label>
                         <input name="aluno3" type="text" class="form-control" id="inputZip">
                     </div>
-                    <hr> --->
+                    <hr>
 
                     <!------------------------------------------------------------------->
 
-                 <!--   <h5 class="card-title text-center">Membro 4</h5>
+                    <h5 class="card-title text-center">Membro 4</h5>
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
@@ -266,10 +264,9 @@
                         <input name="aluno4" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
--->
+
                     <!------------------------------------------------------------------->
 
-<!--
                     <h5 class="card-title text-center">Membro 5</h5>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
@@ -299,12 +296,12 @@
                         <label for="inputZip" class="form-label">Nº Aluno</label>
                         <input name="aluno5" type="text" class="form-control" id="inputZip">
                     </div>
-                    <hr>-->
+                    <hr>
 
 
                     <!------------------------------------------------------------------->
 
-<!--
+
                     <h5 class="card-title text-center">Membro 6</h5>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
@@ -335,10 +332,10 @@
                         <input name="aluno6" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
--->
+
                     <!------------------------------------------------------------------->
 
-<!--
+
                     <h5 class="card-title text-center">Membro 7</h5>
 
                     <div class="col-md-6">
@@ -370,10 +367,9 @@
                         <input name="aluno7" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
--->
 
                     <!------------------------------------------------------------------->
-<!--
+
 
 
                     <h5 class="card-title text-center">Membro 8</h5>
@@ -408,9 +404,7 @@
                     </div>
                     <hr>
 
---->
                     <!------------------------------------------------------------------->
-<!--
 
                     <h5 class="card-title text-center">Membro 9</h5>
 
@@ -443,9 +437,8 @@
                         <input name="aluno9" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
--->
                     <!------------------------------------------------------------------->
-<!--
+
 
                     <h5 class="card-title text-center">Membro 10</h5>
 
@@ -477,19 +470,11 @@
                         <label for="inputZip" class="form-label">Nº Aluno</label>
                         <input name="aluno10" type="text" class="form-control" id="inputZip">
                     </div>
--->
-                    <!--<div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Check me out
-                            </label>
-                        </div>
-                    </div>-->
+
+
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-sm nav-link nav-link-ltr" style="margin-top:2rem;padding:0.8rem;width:100%;font-weight:bold; color:#cbae73;background-color:rgba(15,23,72,0.9); ;
     border-color: var(--bs-btn-hover-border-color);">Inscrever</button>
-
                     </div>
                 </form>
             </div>

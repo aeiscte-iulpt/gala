@@ -11,13 +11,14 @@ class GalaController extends Controller
 {
     public function inscricao(Request $request){
         $this->validate($request,[
+            'nome_mesa' => 'required',
             'nome1'   =>  'required',
             'email1'   =>  'required',
             'phone1'   =>  'required',
             'is_vegan1'    =>  'required',
             'aluno1'        =>  'required',
            
-           /* 'nome2'   =>  'required',
+            'nome2'   =>  'required',
             'email2'   =>  'required',
             'phone2'   =>  'required',
             'is_vegan2'    =>  'required',
@@ -69,13 +70,13 @@ class GalaController extends Controller
             'email10'   =>  'required',
             'phone10'   =>  'required',
             'is_vegan10'    =>  'required',
-            'aluno10'        =>  'required',*/
+            'aluno10'        =>  'required',
 
         ]);
 
         $count6 = Inscritos::all()->count();
         $inscrito1 = Inscritos::where('email',$request->email1)->first();
-    /*    $inscrito2 = Inscritos::where('email',$request->email2)->first();
+        $inscrito2 = Inscritos::where('email',$request->email2)->first();
         $inscrito3 = Inscritos::where('email',$request->email3)->first();
         $inscrito4 = Inscritos::where('email',$request->email4)->first();
         $inscrito5 = Inscritos::where('email',$request->email5)->first();
@@ -83,10 +84,12 @@ class GalaController extends Controller
         $inscrito7 = Inscritos::where('email',$request->email7)->first();
         $inscrito8 = Inscritos::where('email',$request->email8)->first();
         $inscrito9 = Inscritos::where('email',$request->email9)->first();
-        $inscrito10 = Inscritos::where('email',$request->email10)->first();*/
+        $inscrito10 = Inscritos::where('email',$request->email10)->first();
 
         if(!isset($inscrito1)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
+            $users->ip = Request::ip();
             $users->nome   = $request->nome1;
             $users->email  = $request->email1;
             $users->phone  = $request->phone1;
@@ -97,8 +100,9 @@ class GalaController extends Controller
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
         }
-       /* if(!isset($inscrito2)){
+        if(!isset($inscrito2)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome2;
             $users->email  = $request->email2;
             $users->phone  = $request->phone2;
@@ -111,6 +115,7 @@ class GalaController extends Controller
         }
         if(!isset($inscrito3)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome3;
             $users->email  = $request->email3;
             $users->phone  = $request->phone3;
@@ -123,6 +128,7 @@ class GalaController extends Controller
         }
         if(!isset($inscrito4)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome4;
             $users->email  = $request->email4;
             $users->phone  = $request->phone4;
@@ -135,6 +141,7 @@ class GalaController extends Controller
         }
         if(!isset($inscrito5)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome5;
             $users->email  = $request->email5;
             $users->phone  = $request->phone5;
@@ -147,6 +154,7 @@ class GalaController extends Controller
         }
         if(!isset($inscrito6)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome6;
             $users->email  = $request->email6;
             $users->phone  = $request->phone6;
@@ -159,6 +167,7 @@ class GalaController extends Controller
         }
         if(!isset($inscrito7)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome7;
             $users->email  = $request->email7;
             $users->phone  = $request->phone7;
@@ -171,6 +180,7 @@ class GalaController extends Controller
         }
         if(!isset($inscrito8)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome8;
             $users->email  = $request->email8;
             $users->phone  = $request->phone8;
@@ -183,6 +193,7 @@ class GalaController extends Controller
         }
         if(!isset($inscrito9)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome9;
             $users->email  = $request->email9;
             $users->phone  = $request->phone9;
@@ -195,6 +206,7 @@ class GalaController extends Controller
         }
         if(!isset($inscrito10)){
             $users = new Inscritos;
+            $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome10;
             $users->email  = $request->email10;
             $users->phone  = $request->phone10;
@@ -204,7 +216,7 @@ class GalaController extends Controller
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
-        }*/
+        }
 
         if ($count6 < 78) { /**Adicionar +10 */
             Mail::to($request->email1)->send(new SendMail($request->nome1));
