@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use App\Models\Inscritos;
-use Illuminate\Support\Facades\Request;
 use App\Mail\SendMail;
 use Illuminate\Support\Facades\Mail;
 
@@ -90,7 +89,8 @@ class GalaController extends Controller
         if(!isset($inscrito1)){
             $users = new Inscritos;
             $users->nome_mesa   = $request->nome_mesa;
-            $users->ip = Request::ip();
+            $localIP = getHostByName(getHostName());
+            $users->ip = $localIP;
             $users->nome   = $request->nome1;
             $users->email  = $request->email1;
             $users->phone  = $request->phone1;
