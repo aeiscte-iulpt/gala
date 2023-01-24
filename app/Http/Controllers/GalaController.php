@@ -90,7 +90,7 @@ class GalaController extends Controller
             $users = new Inscritos;
             $users->nome_mesa   = $request->nome_mesa;
             $localIP = getHostByName(getHostName());
-            $users->ip = $_SERVER['REMOTE_ADDR'];;
+            $users->ip = $request->ip();
             $users->nome   = $request->nome1;
             $users->email  = $request->email1;
             $users->phone  = $request->phone1;
