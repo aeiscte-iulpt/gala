@@ -17,7 +17,7 @@ class GalaController extends Controller
             'phone1'   =>  'required',
             'is_vegan1'    =>  'required',
             'aluno1'        =>  'required',
-           
+         /*  
             'nome2'   =>  'required',
             'email2'   =>  'required',
             'phone2'   =>  'required',
@@ -70,12 +70,12 @@ class GalaController extends Controller
             'email10'   =>  'required',
             'phone10'   =>  'required',
             'is_vegan10'    =>  'required',
-            'aluno10'        =>  'required',
+            'aluno10'        =>  'required',*/
 
         ]);
 
         $count6 = Inscritos::all()->count();
-        $inscrito1 = Inscritos::where('email',$request->email1)->first();
+        /*$inscrito1 = Inscritos::where('email',$request->email1)->first();
         $inscrito2 = Inscritos::where('email',$request->email2)->first();
         $inscrito3 = Inscritos::where('email',$request->email3)->first();
         $inscrito4 = Inscritos::where('email',$request->email4)->first();
@@ -84,7 +84,7 @@ class GalaController extends Controller
         $inscrito7 = Inscritos::where('email',$request->email7)->first();
         $inscrito8 = Inscritos::where('email',$request->email8)->first();
         $inscrito9 = Inscritos::where('email',$request->email9)->first();
-        $inscrito10 = Inscritos::where('email',$request->email10)->first();
+        $inscrito10 = Inscritos::where('email',$request->email10)->first();*/
 
         if(!isset($inscrito1)){
             $users = new Inscritos;
@@ -100,7 +100,7 @@ class GalaController extends Controller
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
         }
-        if(!isset($inscrito2)){
+        /*if(!isset($inscrito2)){
             $users = new Inscritos;
             $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome2;
@@ -216,7 +216,7 @@ class GalaController extends Controller
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
-        }
+        }*/
 
         if ($count6 < 78) { /**Adicionar +10 */
             Mail::to($request->email1)->send(new SendMail($request->nome1));
