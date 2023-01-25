@@ -85,7 +85,10 @@ class GalaController extends Controller
         $inscrito8 = Inscritos::where('email',$request->email8)->first();
         $inscrito9 = Inscritos::where('email',$request->email9)->first();
         $inscrito10 = Inscritos::where('email',$request->email10)->first();*/
+        $ipfind= Inscritos::where('ip',$request->ip())->first();
+        if (!isset($ipfind)) {
 
+        if ($count6 < 78) {
         if(!isset($inscrito1)){
             $users = new Inscritos;
             $users->nome_mesa   = $request->nome_mesa;
@@ -97,11 +100,12 @@ class GalaController extends Controller
             $users->aluno =$request->aluno1;
             $users->is_vegan =$request->is_vegan1;
             $users->intolerante =$request->intolerante1;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
         }
-        /*if(!isset($inscrito2)){
+        if(!isset($inscrito2)){
             $users = new Inscritos;
             $users->nome_mesa   = $request->nome_mesa;
             $users->nome   = $request->nome2;
@@ -110,6 +114,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno2;
             $users->is_vegan =$request->is_vegan2;
             $users->intolerante =$request->intolerante2;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
@@ -123,6 +128,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno3;
             $users->is_vegan =$request->is_vegan3;
             $users->intolerante =$request->intolerante3;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
@@ -136,6 +142,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno4;
             $users->is_vegan =$request->is_vegan4;
             $users->intolerante =$request->intolerante4;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
@@ -149,6 +156,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno5;
             $users->is_vegan =$request->is_vegan5;
             $users->intolerante =$request->intolerante5;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
@@ -162,6 +170,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno6;
             $users->is_vegan =$request->is_vegan6;
             $users->intolerante =$request->intolerante6;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
@@ -175,6 +184,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno7;
             $users->is_vegan =$request->is_vegan7;
             $users->intolerante =$request->intolerante7;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
@@ -188,6 +198,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno8;
             $users->is_vegan =$request->is_vegan8;
             $users->intolerante =$request->intolerante8;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
@@ -201,6 +212,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno9;
             $users->is_vegan =$request->is_vegan9;
             $users->intolerante =$request->intolerante9;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
@@ -214,17 +226,168 @@ class GalaController extends Controller
             $users->aluno =$request->aluno10;
             $users->is_vegan =$request->is_vegan10;
             $users->intolerante =$request->intolerante10;
+            $users->status="REGISTADO"
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
-        }*/
+        }
 
-        if ($count6 < 78) { /**Adicionar +10 */
-            Mail::to($request->email1)->send(new SendMail($request->nome1));
-            return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
+        Mail::to($request->email1)->send(new SendMail($request->nome1));
+        return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
         }else{
+            if(!isset($inscrito1)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $localIP = getHostByName(getHostName());
+                $users->ip = $request->ip();
+                $users->nome   = $request->nome1;
+                $users->email  = $request->email1;
+                $users->phone  = $request->phone1;
+                $users->aluno =$request->aluno1;
+                $users->is_vegan =$request->is_vegan1;
+                $users->intolerante =$request->intolerante1;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
+            }
+            if(!isset($inscrito2)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome2;
+                $users->email  = $request->email2;
+                $users->phone  = $request->phone2;
+                $users->aluno =$request->aluno2;
+                $users->is_vegan =$request->is_vegan2;
+                $users->intolerante =$request->intolerante2;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
+            }
+            if(!isset($inscrito3)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome3;
+                $users->email  = $request->email3;
+                $users->phone  = $request->phone3;
+                $users->aluno =$request->aluno3;
+                $users->is_vegan =$request->is_vegan3;
+                $users->intolerante =$request->intolerante3;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
+            }
+            if(!isset($inscrito4)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome4;
+                $users->email  = $request->email4;
+                $users->phone  = $request->phone4;
+                $users->aluno =$request->aluno4;
+                $users->is_vegan =$request->is_vegan4;
+                $users->intolerante =$request->intolerante4;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
+            }
+            if(!isset($inscrito5)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome5;
+                $users->email  = $request->email5;
+                $users->phone  = $request->phone5;
+                $users->aluno =$request->aluno5;
+                $users->is_vegan =$request->is_vegan5;
+                $users->intolerante =$request->intolerante5;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
+            }
+            if(!isset($inscrito6)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome6;
+                $users->email  = $request->email6;
+                $users->phone  = $request->phone6;
+                $users->aluno =$request->aluno6;
+                $users->is_vegan =$request->is_vegan6;
+                $users->intolerante =$request->intolerante6;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
+            }
+            if(!isset($inscrito7)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome7;
+                $users->email  = $request->email7;
+                $users->phone  = $request->phone7;
+                $users->aluno =$request->aluno7;
+                $users->is_vegan =$request->is_vegan7;
+                $users->intolerante =$request->intolerante7;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
+            }
+            if(!isset($inscrito8)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome8;
+                $users->email  = $request->email8;
+                $users->phone  = $request->phone8;
+                $users->aluno =$request->aluno8;
+                $users->is_vegan =$request->is_vegan8;
+                $users->intolerante =$request->intolerante8;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
+            }
+            if(!isset($inscrito9)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome9;
+                $users->email  = $request->email9;
+                $users->phone  = $request->phone9;
+                $users->aluno =$request->aluno9;
+                $users->is_vegan =$request->is_vegan9;
+                $users->intolerante =$request->intolerante9;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
+            }
+            if(!isset($inscrito10)){
+                $users = new Inscritos;
+                $users->nome_mesa   = $request->nome_mesa;
+                $users->nome   = $request->nome10;
+                $users->email  = $request->email10;
+                $users->phone  = $request->phone10;
+                $users->aluno =$request->aluno10;
+                $users->is_vegan =$request->is_vegan10;
+                $users->intolerante =$request->intolerante10;
+                $users->status="EM ESPERA"
+                $users->save();
+            }else{
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
+            }
+
             return  back()->with('success', 'Obrigado! A tua inscrição foi registada, mas vais ter que ficar na lista de Espera!');
         }
+
+        }else{
+            return  back()->with('erro', 'OOOPPSS! Só dá para registares uma mesa por computador!');
+        }
+
+       
+            
+        
 
     }
 }
