@@ -124,7 +124,7 @@ class GalaController extends Controller
         ];
 		$validator = Validator::make($request->all(),$rules, $mens);
         if ($validator->fails()) {
-			return redirect('credenciacao')
+			return redirect('inscrever')
 			->withInput()
 			->withfailedrs($validator);
 		}
