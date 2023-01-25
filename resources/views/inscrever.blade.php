@@ -101,21 +101,14 @@
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
-                        <button type="button" class="close" data-dismiss="alert">+</button>
+
                         <li>{{ $error }}</li>
                         @endforeach
                     </ul>
                 </div>
                 @endif
-                @if (Session::get('erro'))
-                <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert">+</button>
-                    <strong>{{Session::get('erro')}}</strong>
-                </div>
-                @endif
                 @if (Session::get('success'))
                 <div class="alert alert-success alert-block">
-                    <button type="button" class="close" data-dismiss="alert">+</button>
                     <strong>{{Session::get('success')}}</strong>
                 </div>
                 @endif
