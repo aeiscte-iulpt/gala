@@ -92,7 +92,6 @@ class GalaController extends Controller
         if(!isset($inscrito1)){
             $users = new Inscritos;
             $users->nome_mesa   = $request->nome_mesa;
-            $localIP = getHostByName(getHostName());
             $users->ip = $request->ip();
             $users->nome   = $request->nome1;
             $users->email  = $request->email1;
