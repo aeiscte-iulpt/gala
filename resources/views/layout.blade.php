@@ -61,7 +61,7 @@ body {
                             href="/#sobre-nos">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" style="font-weight:bold; color:#cbae73;" href="/produtos">Sobre
+                        <a class="nav-link nav-link-ltr" style="font-weight:bold; color:#cbae73;" href="#sobre">Sobre
                             nós</a>
                     </li>
 
