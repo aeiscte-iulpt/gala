@@ -232,7 +232,20 @@ class GalaController extends Controller
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
         }
 
-        Mail::to($request->email1)->send(new SendMail($request->nome1));
+        $data = [
+            'nome_mesa' => $request->nome_mesa,
+            'nome1' => $request->nome1,
+            'nome2' => $request->nome2,
+            'nome3' => $request->nome3,
+            'nome4' => $request->nome4,
+            'nome5' => $request->nome5,
+            'nome6' => $request->nome6,
+            'nome7' => $request->nome7,
+            'nome8' => $request->nome8,
+            'nome9' => $request->nome9,
+            'nome10' => $request->nome10,
+        ];
+        Mail::to($request->email1)->send(new SendMail($data));
         return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
         
         }else{
