@@ -5,13 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Inscritos;
 use App\Mail\SendMail;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Mail;
 
 class GalaController extends Controller
 {
     public function inscricao(Request $request){
-        $rules = [
+        $this->validate($request,[
             'nome_mesa' => 'required',
             'nome1'   =>  'required',
             'email1'   =>  'required',
@@ -73,62 +72,8 @@ class GalaController extends Controller
             'is_vegan10'    =>  'required',
             'aluno10'        =>  'required',
 
-        ];
-        $mens=[   
-            'nome_mesa.required'    => 'Nome da mesa é um campo obrigatório.',
-            'nome1.required'    => 'Nome do responsável é um campo obrigatório.',
-            'nome2.required'    => 'Nome do membro2 é um campo obrigatório.',
-            'nome3.required'    => 'Nome do membro3 é um campo obrigatório.',
-            'nome4.required'    => 'Nome do membro4 é um campo obrigatório.',
-            'nome5.required'    => 'Nome do membro5 é um campo obrigatório.',
-            'nome6.required'    => 'Nome do membro6 é um campo obrigatório.',
-            'nome7.required'    => 'Nome do membro7 é um campo obrigatório.',
-            'nome8.required'    => 'Nome do membro8 é um campo obrigatório.',
-            'nome9.required'    => 'Nome do membro9 é um campo obrigatório.',
-            'nome10.required'    => 'Nome do membro10 é um campo obrigatório.',
+        ]);
 
-            'email1.required'    => 'Email do responsável é um campo obrigatório.',
-            'email2.required'    => 'Email do membro2 é um campo obrigatório.',
-            'email3.required'    => 'Email do membro3 é um campo obrigatório.',
-            'email4.required'    => 'Email do membro4 é um campo obrigatório.',
-            'email5.required'    => 'Email do membro5 é um campo obrigatório.',
-            'email6.required'    => 'Email do membro6 é um campo obrigatório.',
-            'email7.required'    => 'Email do membro7 é um campo obrigatório.',
-            'email8.required'    => 'Email do membro8 é um campo obrigatório.',
-            'email9.required'    => 'Email do membro9 é um campo obrigatório.',
-            'email10.required'    => 'Email do membro10 é um campo obrigatório.',
-
-            'phone1.required'    => 'Numero de telemóvel do responsável é um campo obrigatório.',
-            'phone2.required'    => 'Numero de telemóvel do membro2 é um campo obrigatório.',
-            'phone3.required'    => 'Numero de telemóvel do membro3 é um campo obrigatório.',
-            'phone4.required'    => 'Numero de telemóvel do membro4 é um campo obrigatório.',
-            'phone5.required'    => 'Numero de telemóvel do membro5 é um campo obrigatório.',
-            'phone6.required'    => 'Numero de telemóvel do membro6 é um campo obrigatório.',
-            'phone7.required'    => 'Numero de telemóvel do membro7 é um campo obrigatório.',
-            'phone8.required'    => 'Numero de telemóvel do membro8 é um campo obrigatório.',
-            'phone9.required'    => 'Numero de telemóvel do membro9 é um campo obrigatório.',
-            'phone10.required'    => 'Numero de telemóvel do membro10 é um campo obrigatório.',
-
-            'aluno1.required'    => 'Numero de aluno do responsável é um campo obrigatório.',
-            'aluno2.required'    => 'Numero de aluno do membro2 é um campo obrigatório.',
-            'aluno3.required'    => 'Numero de aluno do membro3 é um campo obrigatório.',
-            'aluno4.required'    => 'Numero de aluno do membro4 é um campo obrigatório.',
-            'aluno5.required'    => 'Numero de aluno do membro5 é um campo obrigatório.',
-            'aluno6.required'    => 'Numero de aluno do membro6 é um campo obrigatório.',
-            'aluno7.required'    => 'Numero de aluno do membro7 é um campo obrigatório.',
-            'aluno8.required'    => 'Numero de aluno do membro8 é um campo obrigatório.',
-            'aluno9.required'    => 'Numero de aluno do membro9 é um campo obrigatório.',
-            'aluno10.required'    => 'Numero de aluno do membro10 é um campo obrigatório.',
-            
-
-        ];
-		$validator = Validator::make($request->all(),$rules, $mens);
-        if ($validator->fails()) {
-			return redirect('inscrever')
-			->withInput()
-			->withfailedrs($validator);
-		}
-		else{
         $count6 = Inscritos::all()->count();
         $inscrito1 = Inscritos::where('email',$request->email1)->first();
         $inscrito2 = Inscritos::where('email',$request->email2)->first();
@@ -158,7 +103,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
         }
         if(!isset($inscrito2)){
             $users = new Inscritos;
@@ -172,7 +117,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
         }
         if(!isset($inscrito3)){
             $users = new Inscritos;
@@ -186,7 +131,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
         }
         if(!isset($inscrito4)){
             $users = new Inscritos;
@@ -200,7 +145,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
         }
         if(!isset($inscrito5)){
             $users = new Inscritos;
@@ -214,7 +159,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
         }
         if(!isset($inscrito6)){
             $users = new Inscritos;
@@ -228,7 +173,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
         }
         if(!isset($inscrito7)){
             $users = new Inscritos;
@@ -242,7 +187,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
         }
         if(!isset($inscrito8)){
             $users = new Inscritos;
@@ -256,7 +201,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
         }
         if(!isset($inscrito9)){
             $users = new Inscritos;
@@ -270,7 +215,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
         }
         if(!isset($inscrito10)){
             $users = new Inscritos;
@@ -284,7 +229,7 @@ class GalaController extends Controller
             $users->status="REGISTADO";
             $users->save();
         }else{
-            return  back()->with('failed', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
+            return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
         }
 
         Mail::to($request->email1)->send(new SendMail($request->nome1));
@@ -303,7 +248,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
             }
             if(!isset($inscrito2)){
                 $users = new Inscritos;
@@ -317,7 +262,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
             }
             if(!isset($inscrito3)){
                 $users = new Inscritos;
@@ -331,7 +276,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
             }
             if(!isset($inscrito4)){
                 $users = new Inscritos;
@@ -345,7 +290,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
             }
             if(!isset($inscrito5)){
                 $users = new Inscritos;
@@ -359,7 +304,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
             }
             if(!isset($inscrito6)){
                 $users = new Inscritos;
@@ -373,7 +318,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
             }
             if(!isset($inscrito7)){
                 $users = new Inscritos;
@@ -387,7 +332,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
             }
             if(!isset($inscrito8)){
                 $users = new Inscritos;
@@ -401,7 +346,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
             }
             if(!isset($inscrito9)){
                 $users = new Inscritos;
@@ -415,7 +360,7 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
             }
             if(!isset($inscrito10)){
                 $users = new Inscritos;
@@ -429,19 +374,19 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
-                return  back()->with('failed', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
+                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
             }
 
             return  back()->with('success', 'Obrigado! A tua inscrição foi registada, mas vais ter que ficar na lista de Espera!');
         }
 
         }else{
-            return  back()->with('failed', 'OOOPPSS! Só dá para registares uma mesa por computador!');
+            return  back()->with('erro', 'OOOPPSS! Só dá para registares uma mesa por computador!');
         }
 
        
             
         
-    }
+
     }
 }
