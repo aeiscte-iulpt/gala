@@ -100,7 +100,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno1;
             $users->is_vegan =$request->is_vegan1;
             $users->intolerante =$request->intolerante1;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
@@ -114,7 +114,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno2;
             $users->is_vegan =$request->is_vegan2;
             $users->intolerante =$request->intolerante2;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
@@ -128,7 +128,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno3;
             $users->is_vegan =$request->is_vegan3;
             $users->intolerante =$request->intolerante3;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
@@ -142,7 +142,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno4;
             $users->is_vegan =$request->is_vegan4;
             $users->intolerante =$request->intolerante4;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
@@ -156,7 +156,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno5;
             $users->is_vegan =$request->is_vegan5;
             $users->intolerante =$request->intolerante5;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
@@ -170,7 +170,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno6;
             $users->is_vegan =$request->is_vegan6;
             $users->intolerante =$request->intolerante6;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
@@ -184,7 +184,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno7;
             $users->is_vegan =$request->is_vegan7;
             $users->intolerante =$request->intolerante7;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
@@ -198,7 +198,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno8;
             $users->is_vegan =$request->is_vegan8;
             $users->intolerante =$request->intolerante8;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
@@ -212,7 +212,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno9;
             $users->is_vegan =$request->is_vegan9;
             $users->intolerante =$request->intolerante9;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
@@ -226,7 +226,7 @@ class GalaController extends Controller
             $users->aluno =$request->aluno10;
             $users->is_vegan =$request->is_vegan10;
             $users->intolerante =$request->intolerante10;
-            $users->status="REGISTADO"
+            $users->status="REGISTADO";
             $users->save();
         }else{
             return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
@@ -246,7 +246,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno1;
                 $users->is_vegan =$request->is_vegan1;
                 $users->intolerante =$request->intolerante1;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
@@ -260,7 +260,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno2;
                 $users->is_vegan =$request->is_vegan2;
                 $users->intolerante =$request->intolerante2;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email2.' já Inscrito!');
@@ -274,7 +274,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno3;
                 $users->is_vegan =$request->is_vegan3;
                 $users->intolerante =$request->intolerante3;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email3.' já Inscrito!');
@@ -288,7 +288,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno4;
                 $users->is_vegan =$request->is_vegan4;
                 $users->intolerante =$request->intolerante4;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email4.' já Inscrito!');
@@ -302,7 +302,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno5;
                 $users->is_vegan =$request->is_vegan5;
                 $users->intolerante =$request->intolerante5;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email5.' já Inscrito!');
@@ -316,7 +316,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno6;
                 $users->is_vegan =$request->is_vegan6;
                 $users->intolerante =$request->intolerante6;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email6.' já Inscrito!');
@@ -330,7 +330,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno7;
                 $users->is_vegan =$request->is_vegan7;
                 $users->intolerante =$request->intolerante7;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email7.' já Inscrito!');
@@ -344,7 +344,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno8;
                 $users->is_vegan =$request->is_vegan8;
                 $users->intolerante =$request->intolerante8;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email8.' já Inscrito!');
@@ -358,7 +358,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno9;
                 $users->is_vegan =$request->is_vegan9;
                 $users->intolerante =$request->intolerante9;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email9.' já Inscrito!');
@@ -372,7 +372,7 @@ class GalaController extends Controller
                 $users->aluno =$request->aluno10;
                 $users->is_vegan =$request->is_vegan10;
                 $users->intolerante =$request->intolerante10;
-                $users->status="EM ESPERA"
+                $users->status="EM ESPERA";
                 $users->save();
             }else{
                 return  back()->with('erro', 'OOOPPSS! Email: '.$request->email10.' já Inscrito!');
