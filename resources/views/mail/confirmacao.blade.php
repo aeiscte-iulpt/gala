@@ -237,7 +237,7 @@
                                                                     style="background-color:#0F1748;background-repeat:repeat;background-size:auto;background-position:center center;overflow:hidden;width:80px;padding:0 0 50px 0;">
                                                                     <div style="font-size:0px;"><img class=t90
                                                                             style="display:block;border:0;height:auto;width:100%;Margin:0;max-width:100%;"
-                                                                            width=130 src=images/4.png /></div>
+                                                                            width=130 src=img/Logo Dourado AE.png /></div>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -437,7 +437,7 @@
                                                                                                     class=t80
                                                                                                     style="display:block;border:0;height:auto;width:100%;Margin:0;max-width:100%;"
                                                                                                     width=24
-                                                                                                    src=images/3.png /></a>
+                                                                                                    src=img/3.png /></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </table>
@@ -460,7 +460,7 @@
                                                                                                     class=t70
                                                                                                     style="display:block;border:0;height:auto;width:100%;Margin:0;max-width:100%;"
                                                                                                     width=24
-                                                                                                    src=images/2.png /></a>
+                                                                                                    src=img/2.png /></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </table>
@@ -483,7 +483,7 @@
                                                                                                     class=t60
                                                                                                     style="display:block;border:0;height:auto;width:100%;Margin:0;max-width:100%;"
                                                                                                     width=24
-                                                                                                    src=images/1.png /></a>
+                                                                                                    src=img/1.png /></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </table>
