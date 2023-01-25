@@ -1,6 +1,8 @@
 @extends('layout')
 
 @section('content')
+<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+
 <style>
 .landing-hero {
     background-size: 100% 100vh;
@@ -78,6 +80,180 @@
     <div class="title111 navbar-nav mx-auto">
     </div>
 </div>
+
+
+
+
+
+
+<section id="sobre" class="section section-sm section-first bg-default text-md-left">
+    <div class="container">
+        <div class="row row-50 justify-content-center align-items-xl-center">
+            <div class="col-md-10 col-lg-5 col-xl-6"><img style="border-radius:15px;" class="shadow"
+                    src="img/todos/1.jpeg" alt="" height="334" />
+            </div>
+            <div class="col-md-10 col-lg-7 col-xl-6">
+
+                <!-- Bootstrap tabs-->
+                <div class="box-width-lg-470">
+                    <!-- Bootstrap tabs-->
+                    <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-md-left"
+                        id="tabs-7">
+                        <!-- Nav tabs-->
+                        <ul class="nav nav-tabs" style="border-bottom: 0px ;">
+                            <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab">
+                                    <h4 style="color:#0f1748cc !important">SOBRE NÓS</h4>
+                                </a></li>
+
+                        </ul>
+                        <!-- Tab panes-->
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tabs-7-1">
+                                <p>Somos hoje uma das mais importantes Associações a nível nacional, representando cerca
+                                    de 10.000 alunos. É nos reconhecido o prestígio, notoriedade e a capacidade na
+                                    promoção de eventos junto da nossa comunidade e na luta dos seus interesses.
+
+                                    Com a implementação do regime fundacional por parte do ISCTE-IUL, a AE renovou a sua
+                                    imagem, adotando a cor azul e a denominação de Associação de Estudantes do ISCTE-IUL
+                                    – Instituto Universitário de Lisboa (AEISCTE-IUL).
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row>div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+</style>
+<div class="container">
+    <h4 style="color:#0f1748cc !important;margin-bottom:2rem;text-align:center;">👀 Edição anterior...</h4>
+
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/1.jpeg">
+                    <img style="border-radius: 15px;" class="shadow" src="img/todos/1.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/2.jpeg">
+                    <img style="border-radius: 15px;" class="shadow" src="img/todos/2.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/3.jpeg">
+                    <img style="border-radius: 15px;" class="shadow" src="img/todos/3.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/4.jpeg">
+                    <img style="border-radius: 15px;" class="shadow" src="img/todos/4.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/5.jpeg">
+                    <img style="border-radius: 15px;" class="shadow" src="img/todos/5.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/6.jpeg">
+                    <img style="border-radius: 15px;" class="shadow" src="img/todos/6.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/7.jpeg">
+                    <img style="border-radius: 15px;" class="shadow" src="img/todos/7.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/8.jpeg">
+                    <img style="border-radius: 15px;" class="shadow" src="img/todos/8.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/todos/9.jpeg">
+                    <img style="border-radius: 15px;" src="img/todos/9.jpeg">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="text-center text-lg-start text-white footer-16371 shadow" style="background-color: #fffff;">
+    <!-- Copyright -->
+    <div class="text-center text-black p-3">
+        © 2023 Copyright
+        <a class="text-black" href="https://aeiscte-iul.pt">AEISCTE-Iul</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+baguetteBox.run('.tz-gallery');
+</script>
 
 
 @endsection
