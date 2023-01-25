@@ -234,6 +234,7 @@ class GalaController extends Controller
 
         Mail::to($request->email1)->send(new SendMail($request->nome1));
         return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
+        
         }else{
             if(!isset($inscrito1)){
                 $users = new Inscritos;
