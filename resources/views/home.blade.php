@@ -2,7 +2,9 @@
 
 @section('content')
 <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
-
+<script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <style>
 .landing-hero {
     background-size: 100% 100vh;
