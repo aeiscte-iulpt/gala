@@ -89,7 +89,7 @@ class GalaController extends Controller
 
         if (!isset($ipfind)) {
            
-        if ($count6 <= 20) {
+        if ($count6 < 20) {
             dd($count6);
             if(!isset($inscrito1)){
                 $users = new Inscritos;
