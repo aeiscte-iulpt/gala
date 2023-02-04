@@ -86,9 +86,9 @@ class GalaController extends Controller
         $inscrito9 = Inscritos::where('email',$request->email9)->first();
         $inscrito10 = Inscritos::where('email',$request->email10)->first();
         $ipfind= Inscritos::where('ip',$request->ip())->first();
-dd($ipfind);
-        if (!isset($ipfind)) {
 
+        if (!isset($ipfind)) {
+            dd($count6);
         if ($count6 <= 30) {
             if(!isset($inscrito1)){
                 $users = new Inscritos;
