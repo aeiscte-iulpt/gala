@@ -75,21 +75,22 @@ class GalaController extends Controller
         ]);
 
         $count6 = Inscritos::all()->count();
-        $inscrito1 = Inscritos::where('email',$request->email1)->first();
-        $inscrito2 = Inscritos::where('email',$request->email2)->first();
-        $inscrito3 = Inscritos::where('email',$request->email3)->first();
-        $inscrito4 = Inscritos::where('email',$request->email4)->first();
-        $inscrito5 = Inscritos::where('email',$request->email5)->first();
-        $inscrito6 = Inscritos::where('email',$request->email6)->first();
-        $inscrito7 = Inscritos::where('email',$request->email7)->first();
-        $inscrito8 = Inscritos::where('email',$request->email8)->first();
-        $inscrito9 = Inscritos::where('email',$request->email9)->first();
-        $inscrito10 = Inscritos::where('email',$request->email10)->first();
+        $inscrito1 = Inscritos::where('aluno',$request->aluno1)->first();
+        $inscrito2 = Inscritos::where('aluno',$request->aluno2)->first();
+        $inscrito3 = Inscritos::where('aluno',$request->aluno3)->first();
+        $inscrito4 = Inscritos::where('aluno',$request->aluno4)->first();
+        $inscrito5 = Inscritos::where('aluno',$request->aluno5)->first();
+        $inscrito6 = Inscritos::where('aluno',$request->aluno6)->first();
+        $inscrito7 = Inscritos::where('aluno',$request->aluno7)->first();
+        $inscrito8 = Inscritos::where('aluno',$request->aluno8)->first();
+        $inscrito9 = Inscritos::where('aluno',$request->aluno9)->first();
+        $inscrito10 = Inscritos::where('aluno',$request->aluno10)->first();
         $ipfind= Inscritos::where('ip',$request->ip())->first();
 
         if (!isset($ipfind)) {
+           
+        if ($count6 <= 20) {
             dd($count6);
-        if ($count6 <= 30) {
             if(!isset($inscrito1)){
                 $users = new Inscritos;
                 $users->nome_mesa   = $request->nome_mesa;
