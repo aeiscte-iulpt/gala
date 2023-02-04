@@ -128,23 +128,23 @@
                     <h5 class="card-title text-center">Responsável da mesa</h5>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome1" class="form-control" id="inputEmail4">
+                        <input type="text" required name="nome1" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email1" class="form-control" id="inputPassword4">
+                        <input type="email" required name="email1" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone1" class="form-control" id="inputCity">
+                        <input type="text" required name="phone1" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante1" class="form-control" id="inputCity">
+                        <input type="text" required name="intolerante1" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan1" id="inputState" class="form-select">
+                        <select name="is_vegan1" required id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -152,7 +152,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno1" type="text" class="form-control" id="inputZip">
+                        <input name="aluno1" required type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
 
@@ -162,23 +162,23 @@
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome2" class="form-control" id="inputEmail4">
+                        <input type="text" required name="nome2" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email2" class="form-control" id="inputPassword4">
+                        <input type="email" required name="email2" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone2" class="form-control" id="inputCity">
+                        <input type="text" required name="phone2" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante2" class="form-control" id="inputCity">
+                        <input type="text" required name="intolerante2" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan2" id="inputState" class="form-select">
+                        <select required name="is_vegan2" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno2" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno2" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
 
@@ -196,23 +196,23 @@
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome3" class="form-control" id="inputEmail4">
+                        <input required type="text" name="nome3" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email3" class="form-control" id="inputPassword4">
+                        <input required type="email" name="email3" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone3" class="form-control" id="inputCity">
+                        <input required type="text" name="phone3" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante3" class="form-control" id="inputCity">
+                        <input required type="text" name="intolerante3" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan3" id="inputState" class="form-select">
+                        <select required name="is_vegan3" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -220,7 +220,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno3" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno3" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
 
@@ -230,23 +230,23 @@
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome4" class="form-control" id="inputEmail4">
+                        <input required type="text" name="nome4" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email4" class="form-control" id="inputPassword4">
+                        <input required type="email" name="email4" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone4" class="form-control" id="inputCity">
+                        <input required type="text" name="phone4" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante4" class="form-control" id="inputCity">
+                        <input required type="text" name="intolerante4" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan4" id="inputState" class="form-select">
+                        <select required name="is_vegan4" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -254,7 +254,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno4" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno4" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
 
@@ -263,23 +263,23 @@
                     <h5 class="card-title text-center">Membro 5</h5>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome5" class="form-control" id="inputEmail4">
+                        <input required type="text" name="nome5" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email5" class="form-control" id="inputPassword4">
+                        <input required type="email" name="email5" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone5" class="form-control" id="inputCity">
+                        <input required type="text" name="phone5" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante10" class="form-control" id="inputCity">
+                        <input required type="text" name="intolerante10" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan5" id="inputState" class="form-select">
+                        <select required name="is_vegan5" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -287,7 +287,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno5" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno5" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
 
@@ -298,23 +298,23 @@
                     <h5 class="card-title text-center">Membro 6</h5>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome6" class="form-control" id="inputEmail4">
+                        <input required type="text" name="nome6" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email6" class="form-control" id="inputPassword4">
+                        <input required type="email" name="email6" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone6" class="form-control" id="inputCity">
+                        <input required type="text" name="phone6" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante6" class="form-control" id="inputCity">
+                        <input required type="text" name="intolerante6" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan6" id="inputState" class="form-select">
+                        <select required name="is_vegan6" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -322,7 +322,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno6" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno6" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
 
@@ -333,23 +333,23 @@
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome7" class="form-control" id="inputEmail4">
+                        <input required type="text" name="nome7" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email7" class="form-control" id="inputPassword4">
+                        <input required type="email" name="email7" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone7" class="form-control" id="inputCity">
+                        <input required type="text" name="phone7" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante7" class="form-control" id="inputCity">
+                        <input required type="text" name="intolerante7" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan7" id="inputState" class="form-select">
+                        <select required name="is_vegan7" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -357,7 +357,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno7" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno7" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
 
@@ -369,23 +369,23 @@
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome8" class="form-control" id="inputEmail4">
+                        <input required type="text" name="nome8" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email8" class="form-control" id="inputPassword4">
+                        <input required type="email" name="email8" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone8" class="form-control" id="inputCity">
+                        <input required type="text" name="phone8" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante8" class="form-control" id="inputCity">
+                        <input required type="text" name="intolerante8" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan8" id="inputState" class="form-select">
+                        <select required name="is_vegan8" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -393,7 +393,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno8" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno8" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
 
@@ -403,23 +403,23 @@
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome9" class="form-control" id="inputEmail4">
+                        <input required type="text" name="nome9" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email9" class="form-control" id="inputPassword4">
+                        <input required type="email" name="email9" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone9" class="form-control" id="inputCity">
+                        <input required type="text" name="phone9" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante9" class="form-control" id="inputCity">
+                        <input required type="text" name="intolerante9" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan9" id="inputState" class="form-select">
+                        <select required name="is_vegan9" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -427,7 +427,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno9" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno9" type="text" class="form-control" id="inputZip">
                     </div>
                     <hr>
                     <!------------------------------------------------------------------->
@@ -437,23 +437,23 @@
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" name="nome10" class="form-control" id="inputEmail4">
+                        <input required type="text" name="nome10" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Email</label>
-                        <input type="email" name="email10" class="form-control" id="inputPassword4">
+                        <input required type="email" name="email10" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-md-2">
                         <label for="inputCity" class="form-label">Nº Telemóvel</label>
-                        <input type="text" name="phone10" class="form-control" id="inputCity">
+                        <input required type="text" name="phone10" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
-                        <input type="text" name="intolerante10" class="form-control" id="inputCity">
+                        <input required type="text" name="intolerante10" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">És Vegetariano?</label>
-                        <select name="is_vegan10" id="inputState" class="form-select">
+                        <select required name="is_vegan10" id="inputState" class="form-select">
                             <option value="" disabled selected>Seleciona uma opção..</option>
                             <option value="1">Sim</option>
                             <option value="0">Não</option>
@@ -461,7 +461,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Nº Aluno</label>
-                        <input name="aluno10" type="text" class="form-control" id="inputZip">
+                        <input required name="aluno10" type="text" class="form-control" id="inputZip">
                     </div>
 
 

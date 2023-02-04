@@ -88,8 +88,8 @@ class GalaController extends Controller
         $ipfind= Inscritos::where('ip',$request->ip())->first();
 
         if (!isset($ipfind)) {
-
-        if ($count6 < 301) {
+        if ($count6 < 21) {
+        /*if ($count6 < 301) {*/
         if(!isset($inscrito1)){
             $users = new Inscritos;
             $users->nome_mesa   = $request->nome_mesa;
