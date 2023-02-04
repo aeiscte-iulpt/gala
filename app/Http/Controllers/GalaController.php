@@ -90,7 +90,7 @@ class GalaController extends Controller
         if (!isset($ipfind)) {
            
         if ($count6 < 20) {
-            dd($count6);
+           
             if(!isset($inscrito1)){
                 $users = new Inscritos;
                 $users->nome_mesa   = $request->nome_mesa;
@@ -250,7 +250,7 @@ class GalaController extends Controller
             return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
             
         }else{
-
+            dd(!isset($inscrito1));
             if(!isset($inscrito1)){
                 $users = new Inscritos;
                 $users->nome_mesa   = $request->nome_mesa;
