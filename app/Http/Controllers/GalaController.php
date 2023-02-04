@@ -249,6 +249,7 @@ class GalaController extends Controller
         return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
         
         }else{
+            
             if(!isset($inscrito1)){
                 $users = new Inscritos;
                 $users->nome_mesa   = $request->nome_mesa;

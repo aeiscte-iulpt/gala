@@ -72,15 +72,18 @@
     .title111 {
         position: absolute;
         font-family: 'Adam-Medium';
-        top: 20%;
-        left: 4%;
+       /* top: 50%;
+        left: 50%;*/
     }
 }
 </style>
-
-<div class=" versa1 landing-hero" style="background-image: url('img/homepc.jpeg');">
-    <div class="title111 navbar-nav mx-auto">
-    </div>
+<div class=" versa1 landing-hero" style="background-image: url('img/banner gala.png');">
+<div class=" versa1 landing-hero" style="background-image: url('img/banner cima.png');">
+<div class="col-sm-12 text-center" style="height:100%">
+  <img src="img/Logo AEArtboard 1@4x-8.png" style="width:20rem;" alt="Example image" class="img-responsive" />
+</div>
+   
+</div>
 </div>
 
 
