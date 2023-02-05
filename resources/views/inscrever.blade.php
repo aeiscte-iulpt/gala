@@ -584,4 +584,6 @@
     </div>
     <!-- Copyright -->
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-Zv/Y2ZjK0/d8W/hORavvjKLNJuLzjrqbJtTmTtTjKtjZ+DA8BxCfRvKjmzLQy1jX" crossorigin="anonymous"></script>
+
 @endsection
