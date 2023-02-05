@@ -217,7 +217,7 @@ class GalaController extends Controller
                     'nome10' => $request->nome10,
                 ];
                 Mail::to($request->email1)->send(new SendMail($data));
-                return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
+                return  back()->with('success', 'Obrigado! A tua inscrição foi registada! Verifica no teu email, a confirmação. Se não encontrares está no spam!');
             }else{
                 return  back()->with('erro', 'OOOPPSS! Algum número de aluno que registou neste formulário já está inscrito! Por favor tente outra vez!');
             }

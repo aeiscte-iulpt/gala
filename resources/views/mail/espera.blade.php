@@ -267,7 +267,7 @@
                                                                     style="overflow:hidden;width:600px;padding:0 0 22px 0;">
                                                                     <p class=t110
                                                                         style="font-family:BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif, 'Albert Sans';line-height:22px;font-weight:500;font-style:normal;font-size:14px;text-decoration:none;text-transform:none;letter-spacing:-0.56px;direction:ltr;color:#333333;text-align:left;mso-line-height-rule:exactly;mso-text-raise:2px;">
-                                                                        A tua mesa para a Gala Iscte ’23 foi registada. Para confirmarem a vossa presença, dirijam-se à Secretaria da AEISCTE nos dias 7 a 8 de fevereiro para proceder ao pagamento. Este deve ser feito com o valor total respetivo à mesa, por uma das pessoas que a constituem. Confirma o teu registo:
+                                                                        A tua mesa para a Gala Iscte ’23 está em fila de espera. Isto significa que por não te teres conseguido inscrever no número de vagas que temos disponíveis, caso alguma mesa desista ou não realize o pagamento até dia 8 de fevereiro, a tua mesa irá conseguir lugar no evento! No dia 9 de fevereiro iremos contactar-te para informar da disponibilidade de vagas e das respetivas datas de pagamento, que se realiza na Secretaria da AEISCTE. Confirma o teu registo:
                                                                     </p>
                                                                 </td>
                                                             </tr>
