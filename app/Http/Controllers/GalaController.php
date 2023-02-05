@@ -8,6 +8,7 @@ use App\Mail\SendMail;
 use App\Mail\SendMailEspera;
 use Illuminate\Support\Facades\Mail;
 
+
 class GalaController extends Controller
 {
     public function inscricao(Request $request){
