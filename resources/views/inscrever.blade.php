@@ -485,7 +485,7 @@
 
 <script>
   document.querySelector('form').addEventListener('submit', function() {
-    document.getElementById('spinner-overlay').style.display = 'block';
+    document.getElementById('spinner-overlay').style.display = 'flex';
   });
 </script>
 
