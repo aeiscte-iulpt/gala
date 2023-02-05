@@ -103,7 +103,7 @@
     <button onclick="location.href='https://www.gala.aeiscte-iul.pt/inscrever'" class="btn btn-sm nav-link nav-link-ltr" style="font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
     border-color: var(--bs-btn-hover-border-color);padding:0.5rem;">Inscrever</button>
     
-    <button onclick="location.href='https://drive.google.com/file/d/1MhZ94gM6dA5Nfb05EwRAvIW2J8uLXMP3/view?usp=sharing'" class="btn btn-sm nav-link nav-link-ltr" style="margin-left:2rem;font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
+    <button formtarget="_blank" onclick="location.href='https://www.gala.aeiscte-iul.pt/pdf/Guia de Inscrição - Gala 23.pdf'" class="btn btn-sm nav-link nav-link-ltr" style="margin-left:2rem;font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
     border-color: var(--bs-btn-hover-border-color);padding:0.5rem;">Guia de Inscrições</button>
 </div>
 <div class="col-md-12 text-center vamos" >
