@@ -44,7 +44,7 @@ class SendEmailEspera extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.espera',
+            view: 'mail.espera',
         );
     }
 
