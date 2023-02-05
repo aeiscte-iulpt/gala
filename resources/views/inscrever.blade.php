@@ -118,7 +118,7 @@
                 </div>
                 @endif
 
-                <form class="row g-3" action="{{ url('/inscricao') }}" method="post">
+                <form id="form-submit" class="row g-3" action="{{ url('/inscricao') }}" method="post">
                     @csrf
                     <div class="col-md-3"></div>
 
@@ -481,26 +481,29 @@
     </div>
 
 </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+  $(document).ready(function() {
+    $('#form-submit').submit(function(event) {
+      event.preventDefault();
 
-$(document).ready(function() {
-  $('form').submit(function(event) {
-    event.preventDefault();
+      $('#spinner-overlay').show();
 
-    $('#spinner-overlay').show();
-
-    $.ajax({
-      type: 'POST',
-      url: '/inscricao',
-      data: $(this).serialize(),
-      success: function(response) {
-        $('#spinner-overlay').hide();
-        // faça algo com a resposta
-      }
+      $.ajax({
+        type: 'POST',
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        success: function(response) {
+          $('#spinner-overlay').hide();
+          // faça algo com a resposta
+        }
+      });
     });
   });
-});
 </script>
+
+
+
 <style>
     #spinner-overlay {
   position: fixed;
@@ -617,6 +620,5 @@ $(document).ready(function() {
     </div>
     <!-- Copyright -->
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 @endsection
