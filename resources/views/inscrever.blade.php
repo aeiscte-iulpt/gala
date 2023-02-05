@@ -1,7 +1,8 @@
 @extends('layout')
 
 @section('content')
-<svg id="spinner" role="img" aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00" class="smiley" viewBox="0 0 128 128" width="128px" height="128px">
+<div class="ger"  id="spinner" style="display:none;">
+<svg role="img" aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00" class="smiley" viewBox="0 0 128 128" width="128px" height="128px">
   <defs>
     <clipPath id="smiley-eyes">
       <circle class="smiley__eye1" cx="64" cy="64" r="8" transform="rotate(-40,64,64) translate(0,-56)" />
@@ -32,6 +33,7 @@
     </g>
   </g>
 </svg>
+</div>
 <style>
 :root {
   --hue: 223;
@@ -40,7 +42,17 @@
   --trans-dur: 0.3s;
   font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
 }
-
+.ger {
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1em/1.5 sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  transition: 
+    background-color var(--trans-dur),
+    color var(--trans-dur);
+}
 .smiley {
   width: 8em;
   height: 8em;
