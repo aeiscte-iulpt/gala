@@ -109,7 +109,7 @@
                 @endif
                 @if (Session::get('erro'))
                 <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert">+</button>
+                    
                     <strong>{{Session::get('erro')}}</strong>
                 </div>
                 @endif
