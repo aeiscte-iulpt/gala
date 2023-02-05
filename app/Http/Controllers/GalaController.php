@@ -264,8 +264,9 @@ class GalaController extends Controller
                 $users->status="EM ESPERA";
                 $users->save();
             }else{
+                
+                return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
                 dd(!isset($inscrito1));
-                return  back()->with('erro', 'OOOPPSS! Email: '.$request->email1.' já Inscrito!');
             }
             if(!isset($inscrito2)){
                 $users = new Inscritos;
