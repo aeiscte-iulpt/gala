@@ -103,7 +103,7 @@
     <button onclick="location.href='https://www.gala.aeiscte-iul.pt/inscrever'" class="btn btn-sm nav-link nav-link-ltr" style="font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
     border-color: var(--bs-btn-hover-border-color);padding:0.5rem;">Inscrever</button>
     
-    <button onclick="location.href='https://www.gala.aeiscte-iul.pt/inscrever'" class="btn btn-sm nav-link nav-link-ltr" style="margin-left:2rem;font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
+    <button onclick="location.href='https://drive.google.com/file/d/1MhZ94gM6dA5Nfb05EwRAvIW2J8uLXMP3/view?usp=sharing'" class="btn btn-sm nav-link nav-link-ltr" style="margin-left:2rem;font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
     border-color: var(--bs-btn-hover-border-color);padding:0.5rem;">Guia de Inscrições</button>
 </div>
 <div class="col-md-12 text-center vamos" >
@@ -112,7 +112,6 @@
    
 </div>
 </div>
-
 
 
 
@@ -141,13 +140,7 @@
                         <!-- Tab panes-->
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="tabs-7-1">
-                                <p>Somos hoje uma das mais importantes Associações a nível nacional, representando cerca
-                                    de 10.000 alunos. É nos reconhecido o prestígio, notoriedade e a capacidade na
-                                    promoção de eventos junto da nossa comunidade e na luta dos seus interesses.
-
-                                    Com a implementação do regime fundacional por parte do ISCTE-IUL, a AE renovou a sua
-                                    imagem, adotando a cor azul e a denominação de Associação de Estudantes do ISCTE-IUL
-                                    – Instituto Universitário de Lisboa (AEISCTE-IUL).
+                                <p>A AEISCTE é uma das mais importantes Associações a nível nacional, representando mais de 11.000 alunos. <br>É nos reconhecido o prestígio, notoriedade e a capacidade na promoção de eventos junto da nossa comunidade e na luta dos seus interesses.
                                 </p>
 
                             </div>
