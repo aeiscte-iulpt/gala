@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Inscritos;
 use App\Mail\SendMail;
-use App\Mail\SendMailEspera;
+use App\Mail\SendEmailEspera;
 use Illuminate\Support\Facades\Mail;
 
 
@@ -348,16 +348,16 @@ class GalaController extends Controller
                 $users->intolerante =$request->intolerante10;
                 $users->status="EM ESPERA";
                 $users->save();
-                Mail::to($request->email1)->send(new SendMailEspera($data));
-                Mail::to($request->email2)->send(new SendMailEspera($data));
-                Mail::to($request->email3)->send(new SendMailEspera($data));
-                Mail::to($request->email4)->send(new SendMailEspera($data));
-                Mail::to($request->email5)->send(new SendMailEspera($data));
-                Mail::to($request->email6)->send(new SendMailEspera($data));
-                Mail::to($request->email7)->send(new SendMailEspera($data));
-                Mail::to($request->email8)->send(new SendMailEspera($data));
-                Mail::to($request->email9)->send(new SendMailEspera($data));
-                Mail::to($request->email10)->send(new SendMailEspera($data));
+                Mail::to($request->email1)->send(new SendEmailEspera($data));
+                Mail::to($request->email2)->send(new SendEmailEspera($data));
+                Mail::to($request->email3)->send(new SendEmailEspera($data));
+                Mail::to($request->email4)->send(new SendEmailEspera($data));
+                Mail::to($request->email5)->send(new SendEmailEspera($data));
+                Mail::to($request->email6)->send(new SendEmailEspera($data));
+                Mail::to($request->email7)->send(new SendEmailEspera($data));
+                Mail::to($request->email8)->send(new SendEmailEspera($data));
+                Mail::to($request->email9)->send(new SendEmailEspera($data));
+                Mail::to($request->email10)->send(new SendEmailEspera($data));
 
                 return  back()->with('success', 'Obrigado! A tua inscrição foi registada, mas vais ter que ficar na lista de Espera!');
             }else{
