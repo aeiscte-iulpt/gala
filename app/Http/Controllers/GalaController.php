@@ -265,7 +265,7 @@ class GalaController extends Controller
                 $users->save();
             }else{
                 
-                return  back()->with('success', 'Obrigado! A tua inscrição foi registada!');
+                return  back()->with('erro', 'Obrigado! A tua inscrição foi registada!');
                 dd(!isset($inscrito1));
             }
             if(!isset($inscrito2)){
