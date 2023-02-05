@@ -90,7 +90,7 @@ class GalaController extends Controller
         $ipfind= Inscritos::where('ip',$request->ip())->first();
 
         if (!isset($ipfind)) {
-           
+           /** colocar 200 */
         if ($count6 < 20) {
            
             if(!isset($inscrito1) && !isset($inscrito2) && !isset($inscrito3) && !isset($inscrito4) && !isset($inscrito5) && !isset($inscrito6) && !isset($inscrito7) && !isset($inscrito8) && !isset($inscrito9) && !isset($inscrito10)){
@@ -236,6 +236,7 @@ class GalaController extends Controller
          
             
         }else{
+             /** colocar 250 */
             if ($count6 < 40) {
             if(!isset($inscrito1) && !isset($inscrito2) && !isset($inscrito3) && !isset($inscrito4) && !isset($inscrito5) && !isset($inscrito6) && !isset($inscrito7) && !isset($inscrito8) && !isset($inscrito9) && !isset($inscrito10)){
                 $users1 = new Inscritos;
