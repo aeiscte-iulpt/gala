@@ -118,7 +118,7 @@
                 </div>
                 @endif
 
-                <form class="row g-3" method="post">
+                <form class="row g-3" action="{{ url('/inscricao') }}" method="post">
                     @csrf
                     <div class="col-md-3"></div>
 
