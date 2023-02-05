@@ -47,7 +47,15 @@
         top: 20%;
         left: 4%;
     }
-
+    .butoes{
+        padding-top: 7rem;
+    }
+    .vamos2{
+        display:none !important;
+    }
+    .vamos{
+        display:none !important;
+    }
     /*.al {margin-left:7rem;margin-right:7rem;}*/
 }
 
@@ -75,12 +83,31 @@
        /* top: 50%;
         left: 50%;*/
     }
+    .vamos2{
+        display:none !important;
+    }
+    .vamos{
+        display:none !important;
+    }
+    .butoes{
+        padding-top: 7rem !important;
+    }
 }
 </style>
 <div class=" versa1 landing-hero" style="background-image: url('img/banner gala.png');">
 <div class=" versa1 landing-hero" style="background-image: url('img/banner cima.png');">
-<div class="col-sm-12 text-center" style="height:100%">
-  <img src="img/Logo AEArtboard 1@4x-8.png" style="width:20rem;" alt="Example image" class="img-responsive" />
+<div class="col-md-12 text-center vamos2">
+  <img src="img/Logo AEArtboard 1@4x-8.png" style="padding-top: 15vh;width: 35rem;" alt="Example image" class="img-responsive" />
+</div>
+<div class="col-md-12 text-center d-flex justify-content-center butoes " >
+    <button onclick="location.href='https://www.gala.aeiscte-iul.pt/inscrever'" class="btn btn-sm nav-link nav-link-ltr" style="font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);padding:0.5rem;">Inscrever</button>
+    
+    <button onclick="location.href='https://www.gala.aeiscte-iul.pt/inscrever'" class="btn btn-sm nav-link nav-link-ltr" style="margin-left:2rem;font-weight:bold; color:#cbae73;background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);padding:0.5rem;">Guia de Inscrições</button>
+</div>
+<div class="col-md-12 text-center vamos" >
+  <img src="img/Logo Dourado AE.png" style="padding-top: 11vh;width: 5rem;" alt="Example image" class="img-responsive" />
 </div>
    
 </div>
