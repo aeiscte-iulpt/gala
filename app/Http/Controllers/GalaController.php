@@ -217,6 +217,15 @@ class GalaController extends Controller
                     'nome10' => $request->nome10,
                 ];
                 Mail::to($request->email1)->send(new SendMail($data));
+                Mail::to($request->email2)->send(new SendMail($data));
+                Mail::to($request->email3)->send(new SendMail($data));
+                Mail::to($request->email4)->send(new SendMail($data));
+                Mail::to($request->email5)->send(new SendMail($data));
+                Mail::to($request->email6)->send(new SendMail($data));
+                Mail::to($request->email7)->send(new SendMail($data));
+                Mail::to($request->email8)->send(new SendMail($data));
+                Mail::to($request->email9)->send(new SendMail($data));
+                Mail::to($request->email10)->send(new SendMail($data));
                 return  back()->with('success', 'Obrigado! A tua inscrição foi registada! Verifica no teu email, a confirmação. Se não encontrares está no spam!');
             }else{
                 return  back()->with('erro', 'OOOPPSS! Algum número de aluno que registou neste formulário já está inscrito! Por favor tente outra vez!');
@@ -337,6 +346,16 @@ class GalaController extends Controller
                 $users->intolerante =$request->intolerante10;
                 $users->status="EM ESPERA";
                 $users->save();
+                Mail::to($request->email1)->send(new SendMailEspera($data));
+                Mail::to($request->email2)->send(new SendMailEspera($data));
+                Mail::to($request->email3)->send(new SendMailEspera($data));
+                Mail::to($request->email4)->send(new SendMailEspera($data));
+                Mail::to($request->email5)->send(new SendMailEspera($data));
+                Mail::to($request->email6)->send(new SendMailEspera($data));
+                Mail::to($request->email7)->send(new SendMailEspera($data));
+                Mail::to($request->email8)->send(new SendMailEspera($data));
+                Mail::to($request->email9)->send(new SendMailEspera($data));
+                Mail::to($request->email10)->send(new SendMailEspera($data));
 
                 return  back()->with('success', 'Obrigado! A tua inscrição foi registada, mas vais ter que ficar na lista de Espera!');
             }else{
