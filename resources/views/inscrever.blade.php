@@ -483,38 +483,25 @@
 </section>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-  $(document).ready(function() {
-    $('#form-submit').submit(function(event) {
-      event.preventDefault();
-
-      $('#spinner-overlay').show();
-
-      $.ajax({
-        type: 'POST',
-        url: $(this).attr('action'),
-        data: $(this).serialize(),
-        success: function(response) {
-          $('#spinner-overlay').hide();
-          // faça algo com a resposta
-        }
-      });
-    });
+  document.querySelector('form').addEventListener('submit', function() {
+    document.getElementById('spinner-overlay').style.display = 'block';
   });
 </script>
 
 
 
 <style>
-    #spinner-overlay {
+#spinner-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 
