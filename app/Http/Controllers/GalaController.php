@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Inscritos;
 use App\Mail\SendMail;
+use App\Mail\SendMailEspera;
 use Illuminate\Support\Facades\Mail;
 
 class GalaController extends Controller
