@@ -91,7 +91,7 @@ class GalaController extends Controller
 
         if (!isset($ipfind)) {
            
-        if ($count6 < 10) {
+        if ($count6 < 20) {
            
             if(!isset($inscrito1) && !isset($inscrito2) && !isset($inscrito3) && !isset($inscrito4) && !isset($inscrito5) && !isset($inscrito6) && !isset($inscrito7) && !isset($inscrito8) && !isset($inscrito9) && !isset($inscrito10)){
                 $users1 = new Inscritos;
@@ -236,7 +236,7 @@ class GalaController extends Controller
          
             
         }else{
-            
+            if ($count6 < 40) {
             if(!isset($inscrito1) && !isset($inscrito2) && !isset($inscrito3) && !isset($inscrito4) && !isset($inscrito5) && !isset($inscrito6) && !isset($inscrito7) && !isset($inscrito8) && !isset($inscrito9) && !isset($inscrito10)){
                 $users1 = new Inscritos;
                 $users1->nome_mesa   = $request->nome_mesa;
@@ -376,6 +376,10 @@ class GalaController extends Controller
             }else{
                 return  back()->with('erro', 'OOOPPSS! Existe um aluno deste formulário já inscrito!');
             }
+
+        }else{
+            return  back()->with('erro', 'OOOPPSS! As mesas já estão esgotadas!');
+        } 
 
           
         }

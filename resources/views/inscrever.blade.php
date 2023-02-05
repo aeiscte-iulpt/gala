@@ -482,6 +482,7 @@
 
 </section>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
   document.querySelector('form').addEventListener('submit', function() {
     document.getElementById('spinner-overlay').style.display = 'block';
