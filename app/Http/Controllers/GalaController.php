@@ -379,7 +379,7 @@ class GalaController extends Controller
             }
 
         }else{
-            return  back()->with('erro', 'OOOPPSS! As mesas já estão esgotadas!');
+            return  back()->with('erro', 'OOOPPSS! As vagas para o jantar já estão todas ocupadas, mas não desanimes! Ainda podes ir à festa, comprando o teu bilhete na secretaria da AEISCTE a partir de 13 de fevereiro!');
         } 
 
           

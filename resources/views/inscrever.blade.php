@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-
+<script data-queue-fair-client="aeiscte" src="https://files.queue-fair.net/queue-fair-adapter.js"></script>
 <style>
 .navbar {
     background-color: rgba(15, 23, 72, 1) !important;
@@ -144,7 +144,7 @@
                         <input type="text" required name="phone1" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input type="text" required name="intolerante1" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -178,7 +178,7 @@
                         <input type="text" required name="phone2" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input type="text" required name="intolerante2" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -212,7 +212,7 @@
                         <input required type="text" name="phone3" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input required type="text" name="intolerante3" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -246,7 +246,7 @@
                         <input required type="text" name="phone4" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input required type="text" name="intolerante4" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -279,7 +279,7 @@
                         <input required type="text" name="phone5" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input required type="text" name="intolerante10" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -314,7 +314,7 @@
                         <input required type="text" name="phone6" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input required type="text" name="intolerante6" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -349,7 +349,7 @@
                         <input required type="text" name="phone7" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input required type="text" name="intolerante7" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -385,7 +385,7 @@
                         <input required type="text" name="phone8" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input required type="text" name="intolerante8" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -419,7 +419,7 @@
                         <input required type="text" name="phone9" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input required type="text" name="intolerante9" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
@@ -453,7 +453,7 @@
                         <input required type="text" name="phone10" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputCity" class="form-label">Tens alguma intoleância alimentar?</label>
+                        <label for="inputCity" class="form-label">Tens alguma intolerância alimentar?</label>
                         <input required type="text" name="intolerante10" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">

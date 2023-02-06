@@ -252,7 +252,7 @@
                                                                     style="overflow:hidden;width:600px;padding:0 0 20px 0;">
                                                                     <h1 class=t21
                                                                         style="font-family:BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif, 'Albert Sans';line-height:28px;font-weight:800;font-style:normal;font-size:26px;text-decoration:none;text-transform:none;letter-spacing:-1.04px;direction:ltr;color:#191919;text-align:left;mso-line-height-rule:exactly;mso-text-raise:1px;">
-                                                                        Resgisto confirmado</h1>
+                                                                        Registo confirmado</h1>
                                                                 </td>
                                                             </tr>
                                                         </table>
