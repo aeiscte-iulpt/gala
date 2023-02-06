@@ -91,7 +91,7 @@ class GalaController extends Controller
 
         if (!isset($ipfind)) {
            /** colocar 200 */
-        if ($count6 < 20) {
+        if ($count6 < 200) {
            
             if(!isset($inscrito1) && !isset($inscrito2) && !isset($inscrito3) && !isset($inscrito4) && !isset($inscrito5) && !isset($inscrito6) && !isset($inscrito7) && !isset($inscrito8) && !isset($inscrito9) && !isset($inscrito10)){
                 $users1 = new Inscritos;
@@ -237,7 +237,7 @@ class GalaController extends Controller
             
         }else{
              /** colocar 250 */
-            if ($count6 < 40) {
+            if ($count6 < 250) {
             if(!isset($inscrito1) && !isset($inscrito2) && !isset($inscrito3) && !isset($inscrito4) && !isset($inscrito5) && !isset($inscrito6) && !isset($inscrito7) && !isset($inscrito8) && !isset($inscrito9) && !isset($inscrito10)){
                 $users1 = new Inscritos;
                 $users1->nome_mesa   = $request->nome_mesa;
