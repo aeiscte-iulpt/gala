@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-<script data-queue-fair-client="aeiscte" src="https://files.queue-fair.net/queue-fair-adapter.js"></script>
 <style>
 .navbar {
     background-color: rgba(15, 23, 72, 1) !important;

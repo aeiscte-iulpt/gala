@@ -233,8 +233,6 @@ class GalaController extends Controller
                 return  back()->with('erro', 'OOOPPSS! Algum número de aluno que registou neste formulário já está inscrito! Por favor tente outra vez!');
             }
 
-         
-            
         }else{
              /** colocar 250 */
             if ($count6 < 250) {
